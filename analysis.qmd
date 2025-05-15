@@ -4,4 +4,10 @@ format: html
 editor: visual
 ---
 
-## 
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(x = mpg, y = wt)) + 
+  geom_point() + 
+  theme_minimal()
+
+```
